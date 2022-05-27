@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --maintextColor: black;
+  --headerFont: 'Lobster Two', cursive;
+  --mainbodyFont:'Yantramanav', sans-serif ;
+  --accentclickedColor: #FEC894;
+  --accenthoverColor: #F2CC87; 
+}
+
+.header-nav{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+   position: fixed;
+  top: 0;
+  left:0;
+  z-index: 2;
+  border-bottom: 2px solid var(--accenthoverColor);
+  background-color: white;
+}
+
+.brand-logo{
+  text-decoration: none;
+ 
+}
+
+.brand-logo > h2{
+  display: inline-block;
+  line-height: 2px;
+  color: var(--maintextColor);
+  font-family: var(--headerFont);
+  font-size: 30px;
+}
+
+.navbar{
+/*   outline: 2px solid black; */
+  width: 250px;
+}
+
+.navbar-links{
+ list-style-type: none;
+  display: inline-flex;
+  
+}
+
+.navbar-links-item{
+  text-decoration: none;
+  padding-right: 5em;
+  color: var(--maintextColor);
+  
+}
+
+.navbar-links-item:hover{
+  color: var(--accenthoverColor);
+}
+
+.navbar-links-item:visited{
+  color: var(--accentclickedColor);
+}
+
+
+/* Styling the main */
+
+main{
+  max-width: 55em;
+  height: auto;
+  margin: 0 auto;
+  padding: 4em;
+}
+
+.doodle-display-main{
+/*    width: 55em; */
+  height: 430px;
+/*   outline: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+
+.doodle-display-main > img{
+  height: 430px;
+/*   outline: 2px solid black; */
+}
+
+.doodle-main-text{
+  margin-top: 100px;
+  height: 200px;
+  width: 300px;
+/*   outline: 2px solid black; */
+  font-size: 43px;
+  font-family: var(--mainbodyFont);
+}
+
+.doodle-art-main{
+  margin-top: 8em;
+  padding: 3em;
+   border-top: 2px solid var(--accentclickedColor);
+/*   outline: 2px solid black; */
+  height: 600px;
+  position: relative;
+
+}
+
+.doodle-art-item{
+  width: 350px;
+  height: 300px;
+/*   outline: 2px solid black; */
+  cursor: pointer;
+  box-sizing: border-box;
+  
+}
+
+.doodle-art-item > img{
+  height: 200px;
+  padding-top: 3em;
+  position: background;
+  background-position: center;
+}
+
+.left1{
+   position: absolute;
+  left: 100px;
+  top:3em;
+}
+
+.right1{
+  position: absolute;
+  top: 3em;
+  left: 500px;
+}
+
+.right2{
+  position: absolute;
+  top: 24em;
+  left: 100px;
+}
+
+.left2{
+  position: absolute;
+  top: 24em;
+  left: 500px;
+}
+
+#doodle-art-text{
+  font-family: ;
+  font-size: 20px;
+  margin-top: -10px;
+  color: var(--accentclickedColor);
+  text-shadow: 1px 2px 1px  black;
+}
+
+.hidden{
+  display:none;
+}
+
+.transform{
+  transform: scale(1.1);
+    transition: transform .5s ease-out;
+}
+
+.shadow{
+  box-shadow: inset  1px 1px 5px var(--accentclickedColor), 5px 10px 5px var(--accentclickedColor);
+/*   border: 1px solid grey; */
+}
+
+
+#doodle-more{
+  color: grey;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  padding: 1em;
+  outline: 1px solid gray;
+  width: 300px;
+  height:50px;
+  margin: 2em 10em 0 10em;
+}
+
+
+/* Styling footer */
+
+.footer{
+  height: auto;
+/*   outline: 2px solid black; */
+  background-color: var(--accentclickedColor);
+  padding: 1em;
+  text-align: center;
+}
+
+
